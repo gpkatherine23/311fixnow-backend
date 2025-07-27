@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Load cleaned data
-df = pd.read_csv(r"C:\Users\kathy\311fixnow-backend\data_311_2023_analysis_ver1.csv")
+df = pd.read_csv("data_311_2023_analysis_ver1.csv")
 
 # Load model and mappings
 model = joblib.load("model.pkl")
